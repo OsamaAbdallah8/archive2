@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/projects.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+
+  <section>
+    <h1>About Me</h1>
+    <div id="aboutMe"></div>
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h1>
+
+    <div id="projectNavArrows">
+      <button id="prevArrow">Prev</button>
+      <button id="nextArrow">Next</button>
+    </div>
+
+    <div class="projectsContainer">
+      <div id="projectsList" class="projectsList"></div>
+      <div id="projectSpotlight"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div id="contactContainer">
+      <h1>Contact</h1>
+
+      <form id="contactForm">
+        <input type="email" id="email" placeholder="Email">
+
+        <div id="emailError" class="error"></div>
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <div id="messageError" class="error"></div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer id="mainFooter"></footer>
+  
+  <script type="module" src="./src/index.js"></script>
+</body>
+</html>
+

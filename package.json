@@ -1,0 +1,40 @@
+{
+  "name": "a-personal-portfolio",
+  "version": "1.0.0",
+  "description": "Frontend optimization and testing project",
+  "license": "MIT",
+  "type": "module",
+
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "gulp": "gulp",
+    "test": "mocha"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OsamaAbdallah8/A-Personal-Portfolio.git"
+  },
+
+  "keywords": [],
+  "author": "",
+
+  "bugs": {
+    "url": "https://github.com/OsamaAbdallah8/A-Personal-Portfolio/issues"
+  },
+
+  "homepage": "https://github.com/OsamaAbdallah8/A-Personal-Portfolio#readme",
+
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "cypress": "^15.15.0",
+    "eslint": "^9.39.4",
+    "gulp": "^5.0.1",
+    "gulp-cli": "^3.1.0",
+    "gulp-shell": "^0.8.0",
+    "mocha": "^11.7.5",
+    "parcel": "^2.16.4",
+    "prettier": "^3.8.3"
+  }
+}

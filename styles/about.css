@@ -1,0 +1,36 @@
+#aboutMe {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  text-align: left;
+}
+
+#aboutMe p {
+  font-size: 1.3rem;
+  max-width: 700px;
+}
+
+.headshotContainer {
+  width: 100%;
+  max-width: 320px;
+}
+
+.headshotContainer img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #aboutMe {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #aboutMe p {
+    font-size: 1.1rem;
+  }
+}

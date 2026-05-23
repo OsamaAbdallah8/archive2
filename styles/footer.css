@@ -1,0 +1,35 @@
+#mainFooter {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-name {
+  transition: color 0.3s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-name:hover {
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  #mainFooter {
+    padding: 2rem 1rem;
+  }
+}
