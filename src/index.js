@@ -1,6 +1,5 @@
 import { aboutMeData, projectsData } from '../data/data.js';
-import { renderAboutMe, renderProjectsList, renderSpotlight, renderFooter, FALLBACKS, renderCharCounter, updateCharCounter, showError, clearError } from './utilityRenderFunctions.js';
-import { shuffle } from './Shuffle.js';
+import { renderAboutMe, renderProjectsList, renderSpotlight, renderFooter, renderCharCounter, updateCharCounter, showError, clearError } from './utilityRenderFunctions.js';
 
 function createProjectCard(project, index, fallbacks) {
     const card = document.createElement('div');

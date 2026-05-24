@@ -1,12 +1,16 @@
+const headshotImg = new URL("../images/headshots.jpeg", import.meta.url).href;
+const cardPlaceholder = new URL("../images/card_placeholder_bg.webp", import.meta.url).href;
+const spotlightPlaceholder = new URL("../images/spotlight_placeholder_bg.webp", import.meta.url).href;
+
 export const FALLBACKS = {
     aboutText: "Frontend Developer passionate about modern web experiences.",
-    aboutImage: "images/headshots.jpeg",
+    aboutImage: headshotImg,
     projectName: "Untitled Project",
     shortDesc: "No description available.",
     longDesc: "No detailed description available.",
     url: "#",
-    cardImage: "images/card_placeholder_bg.webp",
-    spotlightImage: "images/spotlight_placeholder_bg.webp"
+    cardImage: cardPlaceholder,
+    spotlightImage: spotlightPlaceholder
 };
 
 export function clearElement(element) {
@@ -79,7 +83,7 @@ export function renderAboutMe(aboutMeData) {
     }
 
     bio.textContent = aboutMeData?.bio || FALLBACKS.aboutText;
-    img.src = 'images/headshots.jpeg';
+    img.src = headshotImg;
     
     img.addEventListener('error', () => {
         img.src = FALLBACKS.aboutImage;

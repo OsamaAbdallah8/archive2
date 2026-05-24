@@ -12,8 +12,13 @@
   <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
+  <nav>
+    <button data-cy="home-link" onclick="window.scrollTo({top:0,behavior:'smooth'})">Home</button>
+    <button data-cy="about-link" onclick="document.getElementById('aboutMe').scrollIntoView({behavior:'smooth'})">About</button>
+    <button data-cy="cardset-link" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Card Set</button>
+  </nav>
 
-  <section>
+  <section id="home">
     <h1>About Me</h1>
     <div id="aboutMe"></div>
   </section>
@@ -37,15 +42,15 @@
       <h1>Contact</h1>
 
       <form id="contactForm">
-        <input type="email" id="email" placeholder="Email">
+        <input type="email" id="email" data-cy="email-input" placeholder="Email">
 
         <div id="emailError" class="error"></div>
 
-        <textarea id="message" placeholder="Your Message"></textarea>
+        <textarea id="message" data-cy="message-input" placeholder="Your Message"></textarea>
 
         <div id="messageError" class="error"></div>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" data-cy="submit-button">Send Message</button>
       </form>
     </div>
   </section>
